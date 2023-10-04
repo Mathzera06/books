@@ -5,6 +5,7 @@
     <meta name="viewport" content=" =device-width, initial-scale=1.0">
     <title>Alura Books</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,5 +49,39 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="/img/Nodejs.png" alt="Livro Nodejs"></div>
+              <div class="swiper-slide"><img src="/img/Acessibilidade.png" alt="Livro Acessibilidade na web"></div>
+              <div class="swiper-slide"><img src="/img/ReactNative.png" alt="Livro React Native"></div>
+              <div class="swiper-slide"><img src="/img/Tuning.png" alt="Livro SQL"></div>
+              <div class="swiper-slide"><img src="/img/MetricasAgeis.png" alt="Livro Métricas Ágeis"></div>
+            </div>
+            
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: 'true'
+            },
+        });
+    </script>
 </body>
 </html>

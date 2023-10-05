@@ -3,6 +3,7 @@
 @import url("styles/carrossel.css");
 
 :root{
+    --azul-escuro: #002F52;
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
